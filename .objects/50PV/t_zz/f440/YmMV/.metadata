@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Restaurants(2)",
+  "Type": "Element",
+  "Id": "YmMVR52Rq0G_i751tB0SjA",
+  "Reference": "ATwcei1hSU-uPAukPB126A/YmMVR52Rq0G_i751tB0SjA",
+  "ParentRef": "ATwcei1hSU-uPAukPB126A/f4408DI0DUOXLZEVWe68Uw",
+  "Created": "2025-02-21T11:19:07.6891428Z",
+  "Updated": "2025-02-21T11:19:07.6891428Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

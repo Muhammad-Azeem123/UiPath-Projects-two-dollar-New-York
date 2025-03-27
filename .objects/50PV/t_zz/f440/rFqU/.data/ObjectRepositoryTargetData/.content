@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HbgyVqYae0i5pIRDLVM9aQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" CVScreenId="f9925037-42b9-4924-ab2f-354e9bbddeca" CvElementArea="62, 246, 65, 44" CvTextArea="90, 260, 10, 15" CvTextArgument="$" CvType="Button" DesignTimeRectangle="91, 257, 9, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='modal-portal-container' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1ickgui' aaname='$' check:innerText='$' /&gt;" Guid="5a118eee-0894-4c3b-b729-e7ff07d54364" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Resrtaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f9925037-42b9-4924-ab2f-354e9bbddeca" CvElementArea="62, 246, 65, 44" CvTextArea="90, 260, 10, 15" CvTextArgument="$" CvType="Button" DesignTimeRectangle="64, 247, 62, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='modal-portal-container' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF growFilter__09f24__SJOGc leftRounded__09f24__BRQUT noRightBorder__09f24__prbVO growFilterContainer__09f24__ZeedZ y-css-cy6s7x' aaname='$' check:innerText='$' /&gt;" Guid="2827c9d3-b6c5-4c35-a957-29dd16c720e5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6c119b7252cc0643a361ab4740290831.png" xmlns="">0CSEzAN4j6kuikhohVoKX_Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

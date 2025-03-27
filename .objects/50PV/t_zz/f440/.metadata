@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Restaurants, Dentists, Bars, Beauty Sa",
+  "Type": "Screen",
+  "Id": "f4408DI0DUOXLZEVWe68Uw",
+  "Reference": "ATwcei1hSU-uPAukPB126A/f4408DI0DUOXLZEVWe68Uw",
+  "ParentRef": "ATwcei1hSU-uPAukPB126A/t_zzOpJuPEuqGEAxRyhivg",
+  "Created": "2025-02-21T10:48:02.122295Z",
+  "Updated": "2025-02-21T10:48:02.122295Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

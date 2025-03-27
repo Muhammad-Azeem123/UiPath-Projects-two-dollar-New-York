@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp",
+  "Type": "App",
+  "Id": "50PVU_2F0EOKfbXUw6nPlg",
+  "Reference": "ATwcei1hSU-uPAukPB126A/50PVU_2F0EOKfbXUw6nPlg",
+  "Created": "2025-02-21T10:48:01.8891712Z",
+  "Updated": "2025-02-21T10:48:01.8891712Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

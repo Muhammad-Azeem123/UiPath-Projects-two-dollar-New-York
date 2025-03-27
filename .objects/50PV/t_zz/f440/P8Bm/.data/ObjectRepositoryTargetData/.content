@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2NyXyZQF1ES3Xggd4JlF6A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" CVScreenId="4371f38e-510c-4e75-8fdc-757f63fa456c" CvElementArea="153, 64, 1509, 45" CvType="InputBox" DesignTimeRectangle="205, 72, 1407, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Resrtaurants New York, NY - Last Updated February 2025 - Yelp - *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Resrtaurants New York, NY - Last Updated February 2025 - Yelp - *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="cc371f5b-ff46-4a18-9a75-bcc6ff8898e8" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Resrtaurants New York, NY - Last Updated February 2025 - Yelp - *' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0343237482967b3d588be7a32849b9bb.png" xmlns="">0R6TcSAKp1ECELrHtmuwWZg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

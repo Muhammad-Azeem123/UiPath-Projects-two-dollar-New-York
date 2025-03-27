@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tmX8mehBoEiYJsbh9i412w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" DesignTimeRectangle="64, 469, 78, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='main-content' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF leftRounded__09f24__BRQUT rightRounded__09f24__JljAv y-css-cy6s7x' aaname='All' check:innerText='All' /&gt;" Guid="51a71aac-0394-4050-8d8f-a0f24ef36c54" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="109, 479, 18, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='All' parentid='main-content' tag='SPAN' type='' class='y-css-1ickgui' check:innerText='All' /&gt;" Guid="52520fce-3f0e-4328-bc9b-46cd56b04ce6" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="168ce00af947a611d4aabf92b0fb69a0.png" xmlns="">0l9tGzUaTL02i_1fc3gHwNg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

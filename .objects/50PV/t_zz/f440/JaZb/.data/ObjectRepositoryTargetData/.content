@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ymYMDi7rbkK889oy3NZUQw" Reference="ATwcei1hSU-uPAukPB126A/JaZbedkWzEK7T4Yc-qAh0A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" DesignTimeRectangle="611, 212, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_location' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='address, neighborhood, city, state or zip' aaname='' /&gt;" Guid="9b627cd5-a965-4099-8fc1-1e62cb88f291" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Resrtaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cff13e61d8795d8d72eafff7c87789b1.png" xmlns="">0XTYQ94viRUi8dPO3tT0GvA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

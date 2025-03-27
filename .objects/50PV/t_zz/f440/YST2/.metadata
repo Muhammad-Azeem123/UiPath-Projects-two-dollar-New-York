@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Button 'All'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "YST2i0wc006f2QhjKTW-vA",
+  "Reference": "ATwcei1hSU-uPAukPB126A/YST2i0wc006f2QhjKTW-vA",
+  "ParentRef": "ATwcei1hSU-uPAukPB126A/f4408DI0DUOXLZEVWe68Uw",
+  "Created": "2025-02-21T11:05:44.6531345Z",
+  "Updated": "2025-02-25T11:52:22.0903979Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

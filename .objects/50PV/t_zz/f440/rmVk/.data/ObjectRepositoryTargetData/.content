@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0zOUmLeD30GbnZQGxJvQVQ" Reference="ATwcei1hSU-uPAukPB126A/rmVk5d_2SEa5sJdvIHgYwg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" DesignTimeRectangle="64, 312, 62, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='modal-portal-container' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='modal-portal-container' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF growFilter__09f24__SJOGc leftRounded__09f24__BRQUT noRightBorder__09f24__prbVO growFilterContainer__09f24__ZeedZ y-css-cy6s7x' aaname='$' check:innerText='$' /&gt;" Guid="99b64fba-084a-4af4-b05f-42574f245b98" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2fd732672f2c09ef2151dd5b1ad1372b.png" xmlns="">0HSgd0xetsEy2yvKJ-HyUkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

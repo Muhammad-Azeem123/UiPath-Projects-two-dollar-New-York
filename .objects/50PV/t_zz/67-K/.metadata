@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Restaurants New York, NY - Last Update",
+  "Type": "Screen",
+  "Id": "67-KvlzYw0Wl3L6L1gxaOg",
+  "Reference": "ATwcei1hSU-uPAukPB126A/67-KvlzYw0Wl3L6L1gxaOg",
+  "ParentRef": "ATwcei1hSU-uPAukPB126A/t_zzOpJuPEuqGEAxRyhivg",
+  "Created": "2025-02-24T14:52:37.2384965Z",
+  "Updated": "2025-02-24T14:52:37.2384965Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

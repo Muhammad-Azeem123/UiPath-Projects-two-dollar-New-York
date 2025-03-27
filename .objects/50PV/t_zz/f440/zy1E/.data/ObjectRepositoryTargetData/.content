@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tAPa7iIJ8EGPMx1rb83LLw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com" CVScreenId="03b267cb-b845-4620-8a26-3cbfb4c85af8" CvTextArea="262, 232, 310, 24" CvTextArgument="things to do, tax services, plumbe" CvType="Text" DesignTimeRectangle="244, 212, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_description' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='things to do, tax services, plumbers' aaname='' /&gt;" Guid="f068ff6b-a503-436a-8459-9b869b94675e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9482fd981f5f0bdbc4a834e19ff3917f.png" xmlns="">0ctNqSTT1mUeqKLMm80hN4A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Label 'Apply filters'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "5Slkxuel-EmWtGhBhEz6rw",
+  "Reference": "ATwcei1hSU-uPAukPB126A/5Slkxuel-EmWtGhBhEz6rw",
+  "ParentRef": "ATwcei1hSU-uPAukPB126A/f4408DI0DUOXLZEVWe68Uw",
+  "Created": "2025-02-25T10:57:17.6517205Z",
+  "Updated": "2025-02-25T10:57:17.6517205Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nC_b2KKUckarxPstUZFpWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" CVScreenId="130c1114-472f-449e-be70-78c135610672" CvElementArea="125, 311, 65, 42" CvTextArea="147, 325, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="126, 312, 63, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF growFilter__09f24__SJOGc noRightBorder__09f24__prbVO growFilterContainer__09f24__ZeedZ y-css-cy6s7x' check:innerText='$$' /&gt;" Guid="fb92d6b8-500b-453d-9012-e5c8b655cdca" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="130c1114-472f-449e-be70-78c135610672" CvElementArea="125, 311, 65, 42" CvTextArea="147, 325, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="149, 322, 17, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1ickgui' check:innerText='$$' /&gt;" Guid="ba76203f-1025-4935-bc87-c861c40712b5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="88438f6080d808beb8aee3f9893f1cc8.png" xmlns="">0MhC9CY1oIUKR_J9sCeSOhQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

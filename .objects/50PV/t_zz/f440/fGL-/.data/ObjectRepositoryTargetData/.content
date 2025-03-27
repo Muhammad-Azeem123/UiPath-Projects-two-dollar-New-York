@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SvJohm86XkqFudo_3VLmog" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" CVScreenId="762d5246-9a29-47f5-a1e0-6e61e4e67e7d" CvElementArea="192, 958, 158, 58" CvTextArea="211, 976, 118, 24" CvTextArgument="Apply filters" CvType="Button" DesignTimeRectangle="194, 959, 155, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Apply filters' parentid='modal-portal-container' tag='BUTTON' type='submit' class=' y-css-16wjqqa' check:innerText='Apply filters' /&gt;" Guid="ab85d14e-a38d-4308-85f1-24a4ae6a19fa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="762d5246-9a29-47f5-a1e0-6e61e4e67e7d" CvElementArea="192, 958, 158, 58" CvTextArea="211, 976, 118, 24" CvTextArgument="Apply filters" CvType="Button" DesignTimeRectangle="214, 972, 115, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Apply filters' parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1kbxh17' check:innerText='Apply filters' /&gt;" Guid="7c736c11-5bf1-478e-9a09-7d66bfae267a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="28d0dcdadbe3621fb34b3fcb5ba3a110.png" xmlns="">079s9T05baU6jFsz7Xqzexg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

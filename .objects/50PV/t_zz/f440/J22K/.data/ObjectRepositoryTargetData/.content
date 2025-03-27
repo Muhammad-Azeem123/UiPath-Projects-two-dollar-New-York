@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KiOMcSTuIEmUOn-o7X6vAg" Reference="ATwcei1hSU-uPAukPB126A/J22Koog_SUOgM-kNi_FRkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com" CVScreenId="9e835dd6-69d6-47a2-8e0f-fa6a4face28e" CvTextArea="630, 234, 127, 18" CvTextArgument="New York, NY" CvType="Text" DesignTimeRectangle="611, 212, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_location' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='address, neighborhood, city, state or zip' aaname='' /&gt;" Guid="e103cf4c-efdf-4f90-99da-5d6c369328f1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="47d445edb5c6acfb4fccf49959b0df9e.png" xmlns="">0_uY5adUFaEamZc_H9jKfTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kMVarJYDbkKxZUx0N3nrIA" Reference="ATwcei1hSU-uPAukPB126A/k9yw860F7EyM4m968QFCww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com" CVScreenId="d033d27c-4fa3-4958-9194-b0741d1ea679" CvTextArea="317, 242, 103, 16" CvTextArgument="Restaurants" CvType="Text" DesignTimeRectangle="319, 587, 262, 31" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' class='y-css-8x4us' tag='DIV' aaname='' check:innerText='Restaurants' /&gt;" Guid="378be443-2447-4646-ac69-c9589d0489df" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="748dd255-b2a7-4f5d-8f80-69491a1e1fe2" CvTextArea="262, 232, 310, 23" CvTextArgument="things to do, tax services, plumbe" CvType="Text" DesignTimeRectangle="244, 212, 367, 60" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_description' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='things to do, tax services, plumbers' aaname='' /&gt;" Guid="3e6263b5-1d10-4337-9c08-a6127d9c9e40" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="233aa54804dcd4b0f08a3a377c9f3961.png" xmlns="">0_kdcqktaF0al-tneczt8FQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

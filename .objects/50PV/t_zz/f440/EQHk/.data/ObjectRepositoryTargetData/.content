@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="r_nzJaoDC0iFJCT6Lh-ygw" Reference="ATwcei1hSU-uPAukPB126A/EQHk3rcWC0GiOshHBBzmkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com" CVScreenId="ece70a4b-80d4-41d4-9ff1-e77d2c3f422d" CvElementArea="977, 210, 72, 64" CvType="Button" DesignTimeRectangle="1238, 1718, 92, 25" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ewsdu8x5 y-css-14trpyl' aaname='' /&gt;" Guid="18a9201a-d020-487e-ae18-5850e8978152" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="25fcab68-b9b0-4558-aefd-cf044a7297ef" CvElementArea="977, 210, 73, 65" CvType="Button" DesignTimeRectangle="998, 228, 30, 30" FuzzySelectorArgument="&lt;webctrl aria-role='img' type='' tag='SPAN' class='icon--24-search-v2 y-css-1qhatk2' aaname='' /&gt;" Guid="251e7902-c0ca-40fd-b682-9e99451c67fb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="103300a4b4908a968d0f7064a4c45095.png" xmlns="">0YpsO-wsmF0Wxb8xDsFIuxQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

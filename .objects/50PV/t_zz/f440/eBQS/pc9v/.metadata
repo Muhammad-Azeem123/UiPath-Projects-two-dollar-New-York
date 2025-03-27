@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Apply filters",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "pc9vBJ2edEqog-aqTMrdzg",
+  "Reference": "ATwcei1hSU-uPAukPB126A/pc9vBJ2edEqog-aqTMrdzg",
+  "ParentRef": "ATwcei1hSU-uPAukPB126A/eBQSOPjDXUqKjKLR54ilAw",
+  "Created": "2025-02-25T06:30:43.5320722Z",
+  "Updated": "2025-02-25T06:30:43.5320722Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

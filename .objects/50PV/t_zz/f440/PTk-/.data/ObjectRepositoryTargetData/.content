@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e2TGbexSrkmnWR1kmmPA-g" Reference="ATwcei1hSU-uPAukPB126A/PTk-y_ydxUiJTjt_4DAGRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="yelp.com/search" CVScreenId="840353a3-bc31-4cd2-b8b4-1377e035f399" CvElementArea="125, 246, 65, 42" CvTextArea="147, 260, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="126, 247, 63, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF growFilter__09f24__SJOGc noRightBorder__09f24__prbVO growFilterContainer__09f24__ZeedZ y-css-cy6s7x' check:innerText='$$' /&gt;" Guid="54c8df26-6d91-4d23-a547-df8a0ec583cf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST RESTAURANTS in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="840353a3-bc31-4cd2-b8b4-1377e035f399" CvElementArea="125, 246, 65, 42" CvTextArea="147, 260, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="149, 257, 17, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1ickgui' check:innerText='$$' /&gt;" Guid="ac89fd13-6844-4ede-a5ad-a1a475132ed4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="2" Y="-5" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="eb5fb9bcaf22dc209975bc3aed291e72.png" xmlns="">01xf8qEQ-IkS_lVUVrREK2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

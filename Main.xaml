@@ -1,0 +1,1081 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Windows.Business</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Core.Activities.UiTree</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.IntelligentOCR.DataExtraction</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.WorkflowEvents.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1565.6000000000001,6631.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="684.8,6608" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Restaurants, Dentists, Bars, Beauty Sa" sap:VirtualizedContainerService.HintSize="651.2,6524.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="617.6,6284.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="uisad:IDocumentData(uisad:ExtendedExtractionResultsForDocumentData)" Name="YourExtractionResults" />
+                <Variable x:TypeArguments="sd:DataTable" Name="FilteredDT" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New York, NY(2)'" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com/search" ContentHash="ymYMDi7rbkK889oy3NZUQw" DesignTimeRectangle="611, 212, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_location' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='address, neighborhood, city, state or zip' aaname='' /&gt;" Guid="9b627cd5-a965-4099-8fc1-1e62cb88f291" InformativeScreenshot="cff13e61d8795d8d72eafff7c87789b1.png" Reference="ATwcei1hSU-uPAukPB126A/JaZbedkWzEK7T4Yc-qAh0A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Resrtaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'New York, NY(1)'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Text="New York, NY, United States" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com" CVScreenId="9e835dd6-69d6-47a2-8e0f-fa6a4face28e" ContentHash="KiOMcSTuIEmUOn-o7X6vAg" CvTextArea="630, 234, 127, 18" CvTextArgument="New York, NY" CvType="Text" DesignTimeRectangle="611, 212, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_location' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='address, neighborhood, city, state or zip' aaname='' /&gt;" Guid="e103cf4c-efdf-4f90-99da-5d6c369328f1" InformativeScreenshot="47d445edb5c6acfb4fccf49959b0df9e.png" Reference="ATwcei1hSU-uPAukPB126A/J22Koog_SUOgM-kNi_FRkw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT search_description(3)'" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com" CVScreenId="03b267cb-b845-4620-8a26-3cbfb4c85af8" ContentHash="tAPa7iIJ8EGPMx1rb83LLw" CvTextArea="262, 232, 310, 24" CvTextArgument="things to do, tax services, plumbe" CvType="Text" DesignTimeRectangle="244, 212, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_description' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='things to do, tax services, plumbers' aaname='' /&gt;" Guid="f068ff6b-a503-436a-8459-9b869b94675e" InformativeScreenshot="9482fd981f5f0bdbc4a834e19ff3917f.png" Reference="ATwcei1hSU-uPAukPB126A/zy1EoCzWH0e4wzvPgkrhWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search_description(4)'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Text="Restaurants[k(Enter)]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com" CVScreenId="0eb7a1c2-6400-451c-8502-af585d8cbf62" ContentHash="XyDoCrojVEOe9iVlGndf8A" CvElementArea="241, 146, 740, 62" CvType="InputBox" DesignTimeRectangle="244, 147, 367, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search_description' tag='INPUT' type='search' class='input__09f24__yaqh1 y-css-trukho e140vcx51' placeholder='things to do, tax services, plumbers' aaname='' /&gt;" Guid="dbb6cdb4-2871-4da9-b581-81452f53fd70" InformativeScreenshot="fae90778dcf4eda6b040af0173c5b4aa.png" Reference="ATwcei1hSU-uPAukPB126A/I5Hf1MLMrEixod0cPz3NaQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="Delay_23">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button 'All''" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com/search" ContentHash="tmX8mehBoEiYJsbh9i412w" DesignTimeRectangle="64, 469, 78, 42" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='main-content' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF leftRounded__09f24__BRQUT rightRounded__09f24__JljAv y-css-cy6s7x' aaname='All' check:innerText='All' /&gt;" Guid="51a71aac-0394-4050-8d8f-a0f24ef36c54" InformativeScreenshot="168ce00af947a611d4aabf92b0fb69a0.png" Reference="ATwcei1hSU-uPAukPB126A/haEyQ8Y8UEi3W6numD6Wcg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="109, 479, 18, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='All' parentid='main-content' tag='SPAN' type='' class='y-css-1ickgui' check:innerText='All' /&gt;" Guid="52520fce-3f0e-4328-bc9b-46cd56b04ce6" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button '$$''" sap:VirtualizedContainerService.HintSize="584,225.6" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com/search" CVScreenId="130c1114-472f-449e-be70-78c135610672" ContentHash="nC_b2KKUckarxPstUZFpWg" CvElementArea="125, 311, 65, 42" CvTextArea="147, 325, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="126, 312, 63, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF growFilter__09f24__SJOGc noRightBorder__09f24__prbVO growFilterContainer__09f24__ZeedZ y-css-cy6s7x' check:innerText='$$' /&gt;" Guid="fb92d6b8-500b-453d-9012-e5c8b655cdca" InformativeScreenshot="88438f6080d808beb8aee3f9893f1cc8.png" Reference="ATwcei1hSU-uPAukPB126A/cyTbVeTAuUWGmJGYm1smNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="130c1114-472f-449e-be70-78c135610672" CvElementArea="125, 311, 65, 42" CvTextArea="147, 325, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="149, 322, 17, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1ickgui' check:innerText='$$' /&gt;" Guid="ba76203f-1025-4935-bc87-c861c40712b5" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Button 'Button '$$''" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="yelp.com/search" CVScreenId="130c1114-472f-449e-be70-78c135610672" ContentHash="nC_b2KKUckarxPstUZFpWg" CvElementArea="125, 311, 65, 42" CvTextArea="147, 325, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="126, 312, 63, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='BUTTON' type='button' class='filterToggle__09f24__XF_eF growFilter__09f24__SJOGc noRightBorder__09f24__prbVO growFilterContainer__09f24__ZeedZ y-css-cy6s7x' check:innerText='$$' /&gt;" Guid="fb92d6b8-500b-453d-9012-e5c8b655cdca" InformativeScreenshot="88438f6080d808beb8aee3f9893f1cc8.png" Reference="ATwcei1hSU-uPAukPB126A/cyTbVeTAuUWGmJGYm1smNA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="130c1114-472f-449e-be70-78c135610672" CvElementArea="125, 311, 65, 42" CvTextArea="147, 325, 18, 15" CvTextArgument="$$" CvType="Button" DesignTimeRectangle="149, 322, 17, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='$$' parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1ickgui' check:innerText='$$' /&gt;" Guid="ba76203f-1025-4935-bc87-c861c40712b5" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply filters'" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="yelp.com/search" CVScreenId="762d5246-9a29-47f5-a1e0-6e61e4e67e7d" ContentHash="SvJohm86XkqFudo_3VLmog" CvElementArea="192, 958, 158, 58" CvTextArea="211, 976, 118, 24" CvTextArgument="Apply filters" CvType="Button" DesignTimeRectangle="194, 959, 155, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Apply filters' parentid='modal-portal-container' tag='BUTTON' type='submit' class=' y-css-16wjqqa' check:innerText='Apply filters' /&gt;" Guid="ab85d14e-a38d-4308-85f1-24a4ae6a19fa" InformativeScreenshot="28d0dcdadbe3621fb34b3fcb5ba3a110.png" Reference="ATwcei1hSU-uPAukPB126A/fGL-5HOpZ0uXhAbKsYS8bg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TOP 10 BEST Restaurants in New York, NY - Updated 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="762d5246-9a29-47f5-a1e0-6e61e4e67e7d" CvElementArea="192, 958, 158, 58" CvTextArea="211, 976, 118, 24" CvTextArgument="Apply filters" CvType="Button" DesignTimeRectangle="214, 972, 115, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Apply filters' parentid='modal-portal-container' tag='SPAN' type='' class='y-css-1kbxh17' check:innerText='Apply filters' /&gt;" Guid="7c736c11-5bf1-478e-9a09-7d66bfae267a" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="Delay_24">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name=' Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="584,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" Version="V4">
+                <uix:NExtractData.NextLink>
+                  <uix:TargetAnchorable BrowserURL="yelp.com/search" CVScreenId="1db279b9-17b4-448a-8ade-5f54d2e636b9" CvElementArea="795, 570, 375, 59" CvTextArea="932, 591, 101, 23" CvTextArgument="Next Page" CvType="Button" DesignTimeRectangle="798, 572, 371, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='main-content' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main-content' tag='BUTTON' type='submit' class='pagination-button__09f24__kbFYf y-css-16wjqqa' aaname='Next Page' check:innerText='Next Page' /&gt;" Guid="f6ea21fd-ccf8-4e00-9579-d2cb24048629" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants New York, NY - Last Updated March 2025 - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="1db279b9-17b4-448a-8ade-5f54d2e636b9" CvElementArea="795, 570, 375, 59" CvTextArea="932, 591, 101, 23" CvTextArgument="Next Page" CvType="Button" DesignTimeRectangle="934, 585, 99, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Next Page' parentid='main-content' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next Page' parentid='main-content' tag='SPAN' type='' class='y-css-1kbxh17' check:innerText='Next Page' /&gt;" Guid="514f3249-82cf-47af-93f3-7de108eece51" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NExtractData.NextLink>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.yelp.com/search?find_desc=Restaurants&amp;find_loc=New+York%2C+NY&amp;attrs=RestaurantsPriceRange2.1" DesignTimeRectangle="59, -2769, 1110, 7122" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='main-content' tag='UL' /&gt;" Guid="c98468a4-243c-4578-8b76-19b3a3be5002" InformativeScreenshot="b3e0972d861cfda650dc453564a3071c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Restaurants New York, NY - Last Updated March 2025 - Yelp' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NExtractData>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="Delay_26">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[String.Join(&quot;, &quot;, ExtractDataTable.Columns.Cast(Of System.Data.DataColumn)().Select(Function(c) c.ColumnName).ToList())]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <Assign sap:VirtualizedContainerService.HintSize="584,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">[FilteredDT]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">[ExtractDataTable.AsEnumerable().Where(Function(row) System.Text.RegularExpressions.Regex.IsMatch(row("Name").ToString(), "\d")).CopyToDataTable()]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="Delay_27">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[FilteredDT]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="Filter Name &amp; URLs of Restuarnats.csv" sap:VirtualizedContainerService.HintSize="584,236" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendWriteCsvFile>
+              <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="Delay_22">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[FilteredDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="584,4776" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="EachRow" />
+                    </ActivityAction.Argument>
+                    <Sequence sap2010:Annotation.AnnotationText="Open Browser" DisplayName="Body" sap:VirtualizedContainerService.HintSize="550.4,4585.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="516.8,56.8" sap2010:WorkflowViewState.IdRef="Delay_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Delay>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="516.8,4389.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="e860ebb0-0ca6-452a-949c-d0b696d1310a" Version="V2">
+                        <uix:NApplicationCard.AutoGenerationOptions>
+                          <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                            <uix:GenerationOptions.ExpectedOutputs>
+                              <scg:List x:TypeArguments="x:String" Capacity="4">
+                                <x:Null />
+                              </scg:List>
+                            </uix:GenerationOptions.ExpectedOutputs>
+                          </uix:GenerationOptions>
+                        </uix:NApplicationCard.AutoGenerationOptions>
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence sap:VirtualizedContainerService.HintSize="483.2,4140.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_13" />
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,3956.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="R_Name" />
+                                  <Variable x:TypeArguments="x:String" Name="R_Location" />
+                                  <Variable x:TypeArguments="sd:DataTable" Name="Data" />
+                                  <Variable x:TypeArguments="x:String" Name="R_Rreview" />
+                                  <Variable x:TypeArguments="x:String" Name="R_phoneNumber" />
+                                  <Variable x:TypeArguments="x:String" Name="R_Cuisine" />
+                                  <Variable x:TypeArguments="x:String" Name="R_PricePoint" />
+                                  <Variable x:TypeArguments="x:String" Name="R_rating" />
+                                  <Variable x:TypeArguments="x:String" Name="R_TotalReviews" />
+                                  <Variable x:TypeArguments="x:String" Name="R_Hours" />
+                                  <Variable x:TypeArguments="x:String" Name="R_website" />
+                                  <Variable x:TypeArguments="sd:DataTable" Name="ActualData" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text 'East Village Pizza'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" ScrapingOptions="None" TextString="[R_Name]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/east-village-pizza-new-york" CVScreenId="640ef2bc-3a0f-41e5-a7b8-b131fbdb2774" CvTextArea="390, 581, 353, 67" CvType="AnyWordGroup" DesignTimeRectangle="391, 569, 518, 84" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='y-css-olzveb' /&gt;" Guid="8fa57d72-4700-434f-8790-de20bb358d16" ImageBase64="" InformativeScreenshot="4d6cfe1f03013dc8063151d813f5fe8e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*EAST VILLAGE PIZZA - Updated February 2025 - 1002 Photos &amp;amp; 584 Reviews - 145 1st Ave, New York, New York - Pizza - Restaurant Reviews - Phone Number - Menu - Yelp*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_15" />
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SPAN'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b44ca7d5-6880-465b-ab1b-89a7b6ca16fc" InformativeScreenshot="1b694b5505d0516606611026d07e17a3" Selector="&lt;webctrl aaname='$$ ' tag='SPAN' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <uix:NGetText DisplayName="Get Text 'Highline Pizzeria'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" ScrapingOptions="None" TextString="[R_PricePoint]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/da-andrea-greenwich-village-new-york-2" CVScreenId="4d1403a1-c9e4-4b9d-9af4-12f434467587" CvTextArea="244, 621, 934, 70" CvType="AnyWordGroup" DesignTimeRectangle="244, 609, 931, 84" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='y-css-olzveb' /&gt;" Guid="c33d88b2-2902-4199-8c28-283924e19232" InformativeScreenshot="c122100bc022b1261d6fe9494ebe3f2e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DA ANDREA - GREENWICH VILLAGE - Updated March 2025 - 3174 Photos &amp;amp; 2502 Reviews - 35 W 13th St, New York, New York - Italian - Restaurant Reviews - Phone Number - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CVScreenId="4d1403a1-c9e4-4b9d-9af4-12f434467587" CvTextArea="377, 760, 26, 20" CvTextArgument="$$" CvType="Text" DesignTimeRectangle="380, 757, 46, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='$$ ' tag='SPAN' type='' class=' y-css-1tsir1e' check:innerText='$$' /&gt;" Guid="f4f05c17-5f78-44f2-a4ac-d9a4a1731066" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_18" />
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'SPAN'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_6">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="26a6393b-a79c-4453-bd83-aa587b98ef6b" InformativeScreenshot="d9e0828ed4148539eb07bd7bf3dc99d3" Selector="&lt;webctrl aaname='*' tag='SPAN' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <uix:NGetText DisplayName="Get Text 'Coffee Project New York…'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_rating]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.co.uk/biz/coffee-project-new-york-hells-kitchen-new-york-4" CVScreenId="78db6c96-9ce6-4180-b954-a729f0efe5f0" DesignTimeRectangle="479, 637, 33, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='*' class=' y-css-1jz061g' /&gt;" Guid="c2666918-c909-4188-8d61-83e0f78cc667" ImageBase64="" InformativeScreenshot="652c2d2f1502cad1a3349146713ad533.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='COFFEE PROJECT NEW YORK | HELL’S KITCHEN - * - Yelp' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="78db6c96-9ce6-4180-b954-a729f0efe5f0" CvTextArea="240, 584, 1170, 52" CvTextArgument="Coffee Project New York Hell's Kitchen" CvType="Text" DesignTimeRectangle="244, 544, 436, 84" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='*' class='y-css-olzveb' aaname='Coffee Project New York | Hell&amp;apos;s Kitchen' /&gt;" Guid="df43f6ca-e376-4274-a947-36426d98f0eb" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'A  #reviews'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_5">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca608d2b-e304-4b5c-b448-dc75b9df79cd" InformativeScreenshot="7b04bc4d1b9577cbe2a8bfe298cc20fa" Selector="&lt;webctrl aaname='*' tag='A' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <uix:NGetText DisplayName="Get Text 'T-Swirl Crepe'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_TotalReviews]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.co.uk/biz/t-swirl-crepe-new-york-21" CVScreenId="f3df0e4d-cc9d-4a63-bcec-750e6dc2226f" CvTextArea="509, 641, 118, 22" CvType="AnyWordGroup" DesignTimeRectangle="512, 637, 115, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='y-css-1x1e1r2' /&gt;" Guid="9a2b03af-785d-496d-ba67-06f361556276" ImageBase64="" InformativeScreenshot="10af9ac2a851014b2c91b6caf76f3882.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='T-SWIRL CREPE -  *  - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="f3df0e4d-cc9d-4a63-bcec-750e6dc2226f" CvTextArea="241, 556, 416, 67" CvTextArgument="T-Swirl Crepe" CvType="Text" DesignTimeRectangle="244, 544, 412, 84" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='*' class='y-css-olzveb' aaname='T-Swirl Crepe' /&gt;" Guid="99612cf7-83ee-4cdf-bbab-c5b2d6205d2b" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="416,270.4" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="10" Version="V4">
+                                  <uix:NMouseScroll.SearchedElement>
+                                    <uix:SearchedElement>
+                                      <uix:SearchedElement.Target>
+                                        <uix:TargetAnchorable BrowserURL="yelp.com/biz/wah-fung-no-1-new-york-2" CVScreenId="fae40d2a-af99-46f9-88fd-455c9faa94b5" CvTextArea="1236, 564, 143, 18" CvTextArgument="Get Directions" CvType="Text" DesignTimeRectangle="1238, 703, 142, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Get Directions' tag='A' type='' class='y-css-14ckas3' check:innerText='Get Directions' /&gt;" Guid="ad1bb933-5fe6-49e0-b253-76c07372fcb9" InformativeScreenshot="313bd1cf0ed4b275a65058bd0bb430a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WAH FUNG NO 1 - Updated March 2025 - 2878 Photos &amp;amp; 2274 Reviews - 79 Chrystie St, New York, New York - Fast Food - Restaurant Reviews - Phone Number - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                      </uix:SearchedElement.Target>
+                                      <uix:SearchedElement.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:SearchedElement.Timeout>
+                                    </uix:SearchedElement>
+                                  </uix:NMouseScroll.SearchedElement>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NMouseScroll>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="382.4,160" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="6" Version="V4" />
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_28" />
+                                <uix:NGetText DisplayName="Get Text '145 1st Ave New York, N…'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_Location]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/east-village-pizza-new-york" CVScreenId="6f06b32d-f462-42df-ba1c-964112a0b5e1" CvTextArea="1236, 857, 308, 17" CvType="AnyWordGroup" DesignTimeRectangle="1238, 851, 365, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl type='' class=' y-css-jbomhy' isleaf='1' tag='P' /&gt;" Guid="51e7e17e-3089-430f-8827-e736c3de452e" ImageBase64="" InformativeScreenshot="409dcab334d2fdc9347e539eb1987278.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EAST VILLAGE PIZZA - Updated February 2025 - 1002 Photos &amp;amp; 584 Reviews - 145 1st Ave, New York, New York - Pizza - Restaurant Reviews - Phone Number - Menu - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_14" />
+                                <uix:NGetText DisplayName="Get Text 'Get Directions'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_phoneNumber]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/wah-fung-no-1-new-york-2" CVScreenId="a7a3ebf1-bad8-4e15-9158-fb75f9774401" CvTextArea="1236, 467, 139, 21" CvType="AnyWordGroup" DesignTimeRectangle="1238, 441, 415, 71" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' class='y-css-4cg16w' tag='DIV' aaname='' /&gt;" Guid="d81cc86d-ad4e-43e5-bfa9-da3c408b599a" InformativeScreenshot="8ca22c2d9abc35cf1d25e712b7af3398.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WAH FUNG NO 1 - Updated February 2025 - 2874 Photos &amp;amp; 2271 Reviews - 79 Chrystie St, New York, New York - Fast Food - Restaurant Reviews - Phone Number - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="a7a3ebf1-bad8-4e15-9158-fb75f9774401" CvTextArea="1236, 537, 143, 20" CvTextArgument="Get Directions" CvType="Text" DesignTimeRectangle="1238, 534, 142, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Get Directions' tag='A' type='' class='y-css-14ckas3' check:innerText='Get Directions' /&gt;" Guid="f22764f9-e4a2-4cb9-8ff2-dba46bf62e21" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_7">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="97360493-6bba-455c-8e8e-9dd14d8315c7" InformativeScreenshot="5da231bd9a216db89052b6164f0694f0" Selector="&lt;webctrl css-selector='body&amp;gt;yelp-react-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;aside&amp;gt;section&amp;gt;div&amp;gt;div' tag='DIV' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <uix:NGetText DisplayName="Get Text 'Get Directions'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_website]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/shu-jiao-fu-zhou-new-york-2" CVScreenId="537b0618-feb4-467d-a702-59604fa59c39" CvTextArea="1235, 564, 203, 25" CvType="AnyWordGroup" DesignTimeRectangle="1238, 560, 415, 50" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='y-css-4cg16w' aaname='' /&gt;" Guid="97c1654c-d972-43ee-b680-b5293cde6ec4" InformativeScreenshot="6119c53d8377cc5bdb8f7c643e84f875.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHU JIAO FU ZHOU - Updated March 2025 - 2312 Photos &amp;amp; 1561 Reviews - 295 Grand St, New York, New York - Chinese - Restaurant Reviews - Phone Number - Menu - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="537b0618-feb4-467d-a702-59604fa59c39" CvTextArea="1236, 707, 143, 18" CvTextArgument="Get Directions" CvType="Text" DesignTimeRectangle="1238, 703, 142, 27" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Get Directions' tag='A' type='' class='y-css-14ckas3' check:innerText='Get Directions' /&gt;" Guid="444817ed-ccf3-49fa-a043-d8b18879f192" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_6" InteractionMode="HardwareEvents" MovementUnits="12" Version="V4" />
+                                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="Delay_25" />
+                                <uix:NGetText DisplayName="Get Text 'Get Directions'" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_Hours]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/wah-fung-no-1-new-york-2" DesignTimeRectangle="677, 549, 500, 280" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' class=' y-css-mhg9c5' parentid='location-and-hours' tag='DIV' aaname='' /&gt;" Guid="1216445b-b4b6-4577-bdff-fa657943a20b" InformativeScreenshot="ced2870678626c0237c8ced1680c958f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WAH FUNG NO 1 - Updated February 2025 - 2874 Photos &amp;amp; 2271 Reviews - 79 Chrystie St, New York, New York - Fast Food - Restaurant Reviews - Phone Number - Yelp' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="746b7067-1347-4c1c-85f4-fc0c9f709837" CvTextArea="241, 489, 211, 23" CvTextArgument="Location &amp; Hours" CvType="Text" DesignTimeRectangle="244, 484, 208, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='location-and-hours' tag='H2' type='' class='y-css-1iiiexg' aaname='Location &amp;amp; Hours' check:innerText='Location &amp;amp; Hours' /&gt;" Guid="affeb9c9-a8fa-4759-ba28-f6c0110f080c" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <ui:BuildDataTable DataTable="[ActualData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Pricepoint&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rating&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Total_x0020_Reviews&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Phone_x0020_number_x0020_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;website&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Hours&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ R_Name, R_PricePoint, R_rating, R_TotalReviews, R_Location, R_phoneNumber, R_website, R_Hours}]" DataTable="[ActualData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[ActualData]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="AppendRange_4" SheetName="Sheet1" WorkbookPath="Detailed Data of Restaurnats.xlsx" />
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[Data]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="382.4,139.2" sap2010:WorkflowViewState.IdRef="AppendRange_2" SheetName="Sheet1" WorkbookPath="Restraurants URLs.xlsx" />
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,49.6" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:WriteRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[Data]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="382.4,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Sheet1" StartingCell="[A3]" WorkbookPath="Name&amp;Location.xlsx" />
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="3c747f71a5532b90728a7507f400196c.jpg" Selector="&lt;html app='chrome.exe' url='https://www.yelp.com/biz/shu-jiao-fu-zhou-new-york-2?osq=Restaurants' /&gt;" Title="Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp" Url="[EachRow(&quot; Url&quot;).ToString()]" Version="V1" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="516.8,48" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="620.8,3165.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="587.2,3105.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="e860ebb0-0ca6-452a-949c-d0b696d1310a" Version="V2">
+                              <uix:NApplicationCard.AutoGenerationOptions>
+                                <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                                  <uix:GenerationOptions.ExpectedOutputs>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:Null />
+                                    </scg:List>
+                                  </uix:GenerationOptions.ExpectedOutputs>
+                                </uix:GenerationOptions>
+                              </uix:NApplicationCard.AutoGenerationOptions>
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="553.6,2825.6" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="518.4,2707.2" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="484.8,2647.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="x:String" Name="R_Name" />
+                                            <Variable x:TypeArguments="x:String" Name="R_Rating" />
+                                            <Variable x:TypeArguments="sd:DataTable" Name="ExtractedText" />
+                                            <Variable x:TypeArguments="x:String" Name="Apikey" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Delay Duration="00:00:08" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,436.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,326.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:ExportUiTree ExportedString="{x:Null}" Filter="{x:Null}" OperationTimeoutMS="{x:Null}" DestinationFile="Rrestruarnat name.json" DisplayName="Export UI Tree 'H1'" Format="JSON" sap:VirtualizedContainerService.HintSize="382.4,266.4" sap2010:WorkflowViewState.IdRef="ExportUiTree_1" IncludeScreenshots="False" Overwrite="False" Priority="Performance" UiFramework="Default">
+                                                  <ui:ExportUiTree.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ac3286b7-ac0d-47bf-9315-e1b0ac9a34c4" InformativeScreenshot="5501017d40d19c6b37dc95762df7c89c" Selector="&lt;webctrl tag='H1' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:ExportUiTree.Target>
+                                                </ui:ExportUiTree>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,253.6" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,143.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:BuildDataTable DataTable="{x:Null}" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="382.4,83.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name_x0020_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Rating_x0020_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name_x0020_ /&gt;&#xA;    &lt;Rating_x0020_ /&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,255.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'H1'" sap:VirtualizedContainerService.HintSize="382.4,195.2" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
+                                                  <ui:GetOCRText.OCREngine>
+                                                    <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                                                      <ActivityFunc.Argument>
+                                                        <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                                                      </ActivityFunc.Argument>
+                                                      <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="ZVuroK+T3WflyeS4Wj7AUUw59CMgTWpAWAd7wTrmxlm8+SmqmlYYt0M62N86ViY2USRg2aVIoPMb2Sk4Yyd1mg==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_3" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+                                                    </ActivityFunc>
+                                                  </ui:GetOCRText.OCREngine>
+                                                  <ui:GetOCRText.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fcc22dce-07a2-4e33-a218-e07da6a51975" InformativeScreenshot="19cd191cd351fa0cc1c4a73e988db65c" Selector="&lt;webctrl tag='H1' /&gt;">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:GetOCRText.Target>
+                                                </ui:GetOCRText>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,309.6" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[ExtractedText]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="382.4,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet2" WorkbookPath="Restraurants URLs.xlsx" />
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,351.2" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NGetText DisplayName="Get Text 'Wah Fung No 1'" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="d29e007f-163e-4c93-9bb1-531b229f7f87" ScrapingMethod="TextAttribute" TextString="[R_Name]" Version="V4">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/wah-fung-no-1-new-york-2" CVScreenId="a3b5d0b0-7212-45f8-895e-b864a49a8d62" CvTextArea="240, 512, 407, 55" CvType="AnyWordGroup" DesignTimeRectangle="244, 499, 436, 84" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='y-css-olzveb' /&gt;" Guid="c338dd69-17df-4c36-94f9-b086de991eca" InformativeScreenshot="6f79fcfdcf0eefc5b255b9d2d5da2d86.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WAH FUNG NO 1 - Updated February 2025 - 2874 Photos &amp;amp; 2272 Reviews - 79 Chrystie St, New York, New York - Fast Food - Restaurant Reviews - Phone Number - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                  </uix:NGetText.Target>
+                                                </uix:NGetText>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,351.2" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NGetText DisplayName="Get Text '4.4'" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="e860ebb0-0ca6-452a-949c-d0b696d1310a" TextString="[R_Rating]" Version="V4">
+                                                  <uix:NGetText.Target>
+                                                    <uix:TargetAnchorable BrowserURL="yelp.com/biz/wah-fung-no-1-new-york-2" CVScreenId="8d66536e-20cb-4de8-b302-3f732dffc8d3" CvTextArea="475, 551, 32, 17" CvType="AnyWordGroup" DesignTimeRectangle="479, 546, 33, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class=' y-css-1jz061g' /&gt;" Guid="0ee6d9e8-aeff-4b1d-9632-7fd36cd34396" InformativeScreenshot="03e481b0d1590df5cb997464d09a2408.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WAH FUNG NO 1 - Updated February 2025 - 2874 Photos &amp;amp; 2272 Reviews - 79 Chrystie St, New York, New York - Fast Food - Restaurant Reviews - Phone Number - Yelp' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                  </uix:NGetText.Target>
+                                                </uix:NGetText>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,381.6" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,271.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{R_Name, R_Rating}]" DataTable="[ExtractedText]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382.4,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,300.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,199.2" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[ExtractedText]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="382.4,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet2" WorkbookPath="Restraurants URLs.xlsx" />
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                          </ui:CommentOut>
+                                        </Sequence>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:CommentOut>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_2" InformativeScreenshot="9409aa5354cc0a7c12ec30b28c60b8a5.jpg" Selector="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" Title="Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp" Url="[EachRow(&quot;Urls&quot;).ToString()]" Version="V1" />
+                              </uix:NApplicationCard.TargetApp>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="sI6KDDg7IUCrUueERgU2lg" IconBase64="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" InformativeScreenshot="9409aa5354cc0a7c12ec30b28c60b8a5.jpg" Reference="ATwcei1hSU-uPAukPB126A/f4408DI0DUOXLZEVWe68Uw" Selector="&lt;html app='chrome.exe' title='Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp' /&gt;" Title="Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp" Url="https://www.yelp.com/" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
